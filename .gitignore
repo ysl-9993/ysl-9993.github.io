@@ -25,3 +25,10 @@ package-lock.json
 # Misc
 _sass/vendors
 assets/js/dist
+
+# Ignore .DS_Store
+assets/honor/2023-2024/.DS_Store
+assets/honor/2024-2025/.DS_Store
+assets/honor/.DS_Store
+.gitignore
+.DS_Store
