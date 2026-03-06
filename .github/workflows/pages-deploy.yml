@@ -56,8 +56,8 @@ jobs:
             \-\-disable-external \
             \-\-ignore-urls "/^http:\/\/127.0.0.1/,/^http:\/\/0.0.0.0/,/^http:\/\/localhost/" \
             \-\-allow-hash-href \
-            \-\-http-status-ignore 403,429 \
-            \-\-enforce-https false
+            \-\-http_status_ignore 403,429 \
+            \-\-enforce_https false
 
       - name: Upload site artifact
         uses: actions/upload-pages-artifact@v3
