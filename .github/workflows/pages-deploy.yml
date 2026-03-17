@@ -90,7 +90,7 @@ jobs:
           path: ./_site
 
       - name: Deploy to your server
-        uses: burnett01/rsync-deployments@6.0
+        uses: burnett01/rsync-deployments@master
         with:
           switches: -avz --delete
           path: ./_site/
