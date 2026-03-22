@@ -7,7 +7,6 @@ permalink: /version/
 ## 当前版本
 
 - **版本号**：`{{ site.version }}`
-- **描述**：{{ site.version_tagline }}
 - **更新时间**：{% assign latest_release = site.data.versions | first %}{{ latest_release.date }}{% if latest_release.title %}（{{ latest_release.title }}）{% endif %}
 
 ## 更新日志

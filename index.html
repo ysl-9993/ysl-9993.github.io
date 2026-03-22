@@ -3,5 +3,6 @@ layout: home
 # Index page
 ---
 <script>
-fetch("/track")
+fetch("/track", { method: "POST" })
+  .catch(err => console.error("统计请求失败:", err));
 </script>
