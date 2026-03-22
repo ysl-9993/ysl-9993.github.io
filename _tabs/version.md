@@ -5,14 +5,19 @@ permalink: /version/
 icon: fas fa-history
 ---
 
+{% assign versions_sorted = site.data.versions | sort: "version" %}
+{% assign versions_sorted = versions_sorted | sort: "date" %}
+{% assign versions_sorted = versions_sorted | reverse %}
+{% assign latest_release = versions_sorted | first %}
+
 ## 当前版本
 
 - **版本号**：`{{ site.version }}`
-- **更新时间**：{% assign latest_release = site.data.versions | first %}{{ latest_release.date }}
+- **更新时间**：{{ latest_release.date }}
 
 ## 更新日志
 
-{% for release in site.data.versions | reverse %}
+{% for release in versions_sorted %}
 ### {{ release.version }} · {{ release.date }} · {{ release.title }}
 
 {% if release.summary %}
@@ -22,7 +27,7 @@ icon: fas fa-history
 {% if release.content %}
 - 更新内容：
 
-    {% for highlight in release.content %}
+    {% for content in release.content %}
     - {{ content }}
     {% endfor %}
 {% endif %}
