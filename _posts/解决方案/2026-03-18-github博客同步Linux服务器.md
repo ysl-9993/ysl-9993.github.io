@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "github博客同步个人服务器"
+title: "github博客同步Linux服务器"
 date: 2026-03-18 9:48 +0800
 categories: [解决方案]
 tags: []
@@ -99,10 +99,9 @@ tags: []
             # cd /home/ubuntu/blog  # 个人服务器上的博客目录
     ```
 
-### 5. 配置nginx反向代理
-- 在服务器博客目录下配置nginx反向代理，将目标端口映射到80端口
-- 打开服务器该端口防火墙
+### 5. 配置`nginx`反向代理
+- 在服务器新目录下配置`nginx`反向代理，可通过`docker`启动，将目标端口映射到`80`端口
+    > 使用新目录创建`docker`容器而非`blog`目录，否则`docker`配置文件可能被覆盖
 
 ### 6. 提交同步
 - 提交修改到github仓库，等待github actions完成同步
-    

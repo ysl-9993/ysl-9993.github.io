@@ -1,0 +1,8 @@
+- version: "1.0.0"
+  date: "2026-03-22"
+  title: "首个公开版本"
+  summary: "博客使用 Chirpy 主题，集成访问统计服务，并在腾讯云容器环境部署。"
+  highlights:
+    - "Chirpy 标准布局，包含常用归档页、搜索与深色配色。"
+    - "新增 visit-tracker 服务，记录每次访问并可连接 PostgreSQL。"
+    - "在导航栏新增版本页，方便查询更新历史。"
