@@ -15,13 +15,15 @@ icon: fas fa-history
 {% for release in site.data.versions | reverse %}
 ### {{ release.version }} · {{ release.date }} · {{ release.title }}
 
+{% if release.summary %}
 - {{ release.summary }}
+{% endif %}
 
-{% if release.highlights %}
-- 更新亮点：
+{% if release.content %}
+- 更新内容：
 
-    {% for highlight in release.highlights %}
-    - {{ highlight }}
+    {% for highlight in release.content %}
+    - {{ content }}
     {% endfor %}
 {% endif %}
 ---
