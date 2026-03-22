@@ -1,7 +1,8 @@
 ---
 layout: page
-title: 版本
+title: 版本记录
 permalink: /version/
+icon: fas fa-history
 ---
 
 ## 当前版本
