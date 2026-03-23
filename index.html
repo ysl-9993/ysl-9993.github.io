@@ -2,17 +2,3 @@
 layout: home
 # Index page
 ---
-<script>
-window.addEventListener("load", () => {
-  fetch("/track", {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({
-      url: location.pathname,
-      title: document.title,
-      referrer: document.referrer,
-      ua: navigator.userAgent
-    })
-  }).catch(err => console.error("统计请求失败:", err));
-});
-</script>

@@ -24,10 +24,10 @@ icon: fas fa-history
 - {{ release.summary }}
 {% endif %}
 
-{% if release.content %}
+{% if release.contents %}
 - 更新内容：
 
-    {% for content in release.content %}
+    {% for content in release.contents %}
     - {{ content }}
     {% endfor %}
 {% endif %}
