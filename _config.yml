@@ -21,7 +21,7 @@ tagline: 专注于全栈技术分享 # it will display as the subtitle
 description: >- # used by seo meta and the atom feed
   这是杨仕林的个人技术博客，分享编程学习、前端/后端相关知识。
 
-version: "1.4.1"
+version: "1.4.2"
 version_tagline: 展示核心项目更新，记录每个版本带来的特性
 
 # Fill in the protocol & hostname for your site.
@@ -131,7 +131,7 @@ comments:
 # Self-hosted static assets, optional › https://github.com/cotes2020/chirpy-static-assets
 assets:
   self_host:
-    enabled: # boolean, keep empty means false
+    enabled: true # use local fonts/libs (avoids slow/blocked fonts.googleapis.com)
     # specify the Jekyll environment, empty means both
     # only works if `assets.self_host.enabled` is 'true'
     env: # [development | production]
