@@ -128,3 +128,9 @@
   title: "修复"
   contents: 
     - "补充公安部备案信息图标"
+  
+- version: "1.10.2"
+  date: "2026-05-11"
+  title: "修复"
+  contents: 
+    - "调整备案信息间距"
